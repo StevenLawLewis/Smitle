@@ -3,7 +3,7 @@ body {
     font-family: Arial;
     text-align: center;
     /* Background image */
-    background-image: url("/images/SmiteBackground.png");
+    background-image: url("images/SmiteBackground.jpg");
     /* Makes image cover full screen */
     background-size: cover;
     /* Keeps it centered */
@@ -84,7 +84,7 @@ td, th {
     border-bottom: 1px solid #eee;
 }
 
-    /* Hover effect */
-    .autocomplete-item:hover {
-        background-color: #f0f0f0;
-    }
+/* Hover effect */
+.autocomplete-item:hover {
+    background-color: #f0f0f0;
+}
