@@ -3,7 +3,7 @@ body {
     font-family: Arial;
     text-align: center;
     /* Background image */
-    background-image: url("images/SmiteBackground.png");
+    background-image: url("/images/SmiteBackground.png");
     /* Makes image cover full screen */
     background-size: cover;
     /* Keeps it centered */
