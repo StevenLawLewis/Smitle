@@ -12,12 +12,5 @@
     "pantheon": "Norse",
     "role": "Guardian",
     "range": "Melee"
-  },
-  {
-    "name": "Neith",
-    "gender": "Female",
-    "pantheon": "Egyptian",
-    "role": "Hunter",
-    "range": "Ranged"
   }
 ]
