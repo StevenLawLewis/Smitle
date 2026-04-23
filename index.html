@@ -9,8 +9,17 @@
 
     <h1>Guess the Smite God</h1>
 
-    <!-- Input where user types a god name -->
-    <input type="text" id="guessInput" placeholder="Enter a god name">
+    <!-- Input container (needed for dropdown positioning) -->
+    <div class="autocomplete-container">
+
+        <!-- Main input -->
+        <input type="text" id="guessInput" placeholder="Enter a god name" autocomplete="off">
+
+        <!-- Dropdown list (we fill this dynamically) -->
+        <div id="autocompleteList" class="autocomplete-items"></div>
+
+    </div>
+
     <button onclick="submitGuess()">Guess</button>
 
     <!-- Table to display guesses -->

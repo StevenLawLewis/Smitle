@@ -88,3 +88,50 @@ function addRow(guess, result) {
 
     table.appendChild(row);
 }
+
+/**
+* Listen for typing in the input box
+* and show matching gods in dropdown
+*/
+document.getElementById("guessInput").addEventListener("input", function () {
+    const inputValue = this.value.toLowerCase();
+
+    const listContainer = document.getElementById("autocompleteList");
+
+    // Clear previous suggestions
+    listContainer.innerHTML = "";
+
+    // If input is empty, don't show anything
+    if (!inputValue) return;
+
+    // Filter gods based on user input
+    const matches = gods.filter(god =>
+        god.name.toLowerCase().includes(inputValue)
+    );
+
+    // Create a suggestion box for each match
+    matches.forEach(god => {
+        const item = document.createElement("div");
+        item.classList.add("autocomplete-item");
+
+        item.textContent = god.name;
+
+        // When clicked, fill input and clear suggestions
+        item.addEventListener("click", function () {
+            document.getElementById("guessInput").value = god.name;
+            listContainer.innerHTML = "";
+        });
+
+        listContainer.appendChild(item);
+    });
+});
+
+
+/**
+ * Close dropdown when clicking outside
+ */
+document.addEventListener("click", function (e) {
+    if (e.target.id !== "guessInput") {
+        document.getElementById("autocompleteList").innerHTML = "";
+    }
+});

@@ -22,3 +22,33 @@ td, th {
 .incorrect {
     background-color: lightcoral;
 }
+
+/* Container ensures dropdown aligns with input */
+.autocomplete-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown box */
+.autocomplete-items {
+    position: absolute;
+    border: 1px solid #ccc;
+    border-top: none;
+    z-index: 99;
+    background: white;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+/* Each suggestion */
+.autocomplete-item {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+}
+
+    /* Hover effect */
+    .autocomplete-item:hover {
+        background-color: #f0f0f0;
+    }
