@@ -1,11 +1,47 @@
 body {
+    /* Your existing styles */
     font-family: Arial;
     text-align: center;
+    /* Background image */
+    background-image: url("images/SmiteBackground.png");
+    /* Makes image cover full screen */
+    background-size: cover;
+    /* Keeps it centered */
+    background-position: center;
+    /* Prevents tiling */
+    background-repeat: no-repeat;
+    /* Keeps it fixed when scrolling */
+    background-attachment: fixed;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  /* Dark transparent overlay */
+  background: rgba(0, 0, 0, 0.5);
+
+  z-index: -1;
+}
+
+body {
+    color: white;
 }
 
 table {
     margin: 20px auto;
     border-collapse: collapse;
+}
+
+table {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(6px);
+    border-radius: 10px;
 }
 
 td, th {
