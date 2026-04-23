@@ -1,32 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smitle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
 
-    <div class="game-container">
+    <h1>Smitle</h1>
 
-        <h1>Smite Guess Game</h1>
+    <!-- Input container (needed for dropdown positioning) -->
+    <div class="autocomplete-container">
 
-        <!-- INPUT AREA -->
-        <div class="autocomplete-container">
-            <input type="text" id="guessInput" placeholder="Guess a god..." autocomplete="off">
-            <div id="autocompleteList" class="autocomplete-items"></div>
-        </div>
+        <!-- Main input -->
+        <input type="text" id="guessInput" placeholder="Search for a God" autocomplete="off">
 
-        <button onclick="submitGuess()">Guess</button>
-
-        <!-- RESULTS GRID -->
-        <table id="resultsTable">
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Gender</th>
-                    <th>Pantheon</th>
-                    <th>Role</th>
-                    <th>Range</th>
-                </tr>
-            </thead>
-            <tbody></tbody>
-        </table>
+        <!-- Dropdown list (we fill this dynamically) -->
+        <div id="autocompleteList" class="autocomplete-items"></div>
 
     </div>
 
+    <button onclick="submitGuess()">Guess</button>
+
+    <!-- Table to display guesses -->
+    <table id="resultsTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Pantheon</th>
+                <th>Role</th>
+                <th>Range</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Rows will be added dynamically -->
+        </tbody>
+    </table>
+
     <script src="script.js"></script>
 </body>
+</html>
