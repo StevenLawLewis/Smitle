@@ -1,51 +1,90 @@
-let gods = [];
-let answer = null;
+let gods = [];        // Will store all gods from JSON
+let answer = null;    // Today's correct god
 
-// Load data
+// Load the JSON file when page loads
 fetch('gods.json')
-    .then(res => res.json())
+    .then(response => response.json())
     .then(data => {
         gods = data;
-        answer = gods[getDailyIndex(gods.length)];
+
+        // Pick today's god once data is loaded
+        answer = getDailyGod();
+
+        console.log("Today's answer:", answer); // You can remove later
     });
 
-function getDailyIndex(total) {
-    const start = new Date("2024-01-01");
+
+// Function to determine daily god
+function getDailyGod() {
+    // Fixed start date (important so everyone gets same rotation)
+    const startDate = new Date("2024-01-01");
     const today = new Date();
-    const diffDays = Math.floor((today - start) / (1000 * 60 * 60 * 24));
-    return diffDays % total;
+
+    // Calculate difference in days
+    const diffTime = today - startDate;
+    const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+
+    // Use modulo to loop through gods
+    const index = diffDays % gods.length;
+
+    return gods[index];
 }
 
+
+// Called when user clicks "Guess"
 function submitGuess() {
     const input = document.getElementById("guessInput").value.trim();
 
-    const guess = gods.find(g => g.name.toLowerCase() === input.toLowerCase());
+    // Find the god in our dataset
+    const guessedGod = gods.find(g => g.name.toLowerCase() === input.toLowerCase());
 
-    if (!guess) {
-        alert("God not found");
+    if (!guessedGod) {
+        alert("God not found!");
         return;
     }
 
-    displayResult(guess);
+    // Compare guess with answer
+    const result = compareGuess(guessedGod, answer);
+
+    // Add result to table
+    addRow(guessedGod, result);
 }
 
-function displayResult(guess) {
-    const table = document.getElementById("results");
 
+// Compare each category
+function compareGuess(guess, answer) {
+    return {
+        name: guess.name === answer.name,
+        gender: guess.gender === answer.gender,
+        pantheon: guess.pantheon === answer.pantheon,
+        role: guess.role === answer.role,
+        range: guess.range === answer.range
+    };
+}
+
+
+// Add a row to the table showing results
+function addRow(guess, result) {
+    const table = document.querySelector("#resultsTable tbody");
     const row = document.createElement("tr");
 
-    addCell(row, guess.name, guess.name === answer.name);
-    addCell(row, guess.gender, guess.gender === answer.gender);
-    addCell(row, guess.pantheon, guess.pantheon === answer.pantheon);
-    addCell(row, guess.role, guess.role === answer.role);
-    addCell(row, guess.range, guess.range === answer.range);
+    // Helper function to create a cell with color
+    function createCell(value, isCorrect) {
+        const cell = document.createElement("td");
+        cell.textContent = value;
+
+        // Apply class based on correctness
+        cell.className = isCorrect ? "correct" : "incorrect";
+
+        return cell;
+    }
+
+    // Add each column
+    row.appendChild(createCell(guess.name, result.name));
+    row.appendChild(createCell(guess.gender, result.gender));
+    row.appendChild(createCell(guess.pantheon, result.pantheon));
+    row.appendChild(createCell(guess.role, result.role));
+    row.appendChild(createCell(guess.range, result.range));
 
     table.appendChild(row);
-}
-
-function addCell(row, text, correct) {
-    const cell = document.createElement("td");
-    cell.textContent = text;
-    cell.className = correct ? "correct" : "wrong";
-    row.appendChild(cell);
 }

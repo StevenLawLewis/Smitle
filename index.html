@@ -1,24 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Smite Daily Guess</title>
+    <meta charset="UTF-8">
+    <title>Smite Guess Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>Smite Daily Guess</h1>
+    <h1>Guess the Smite God</h1>
 
+    <!-- Input where user types a god name -->
     <input type="text" id="guessInput" placeholder="Enter a god name">
     <button onclick="submitGuess()">Guess</button>
 
-    <table id="results">
-        <tr>
-            <th>Name</th>
-            <th>Gender</th>
-            <th>Pantheon</th>
-            <th>Role</th>
-            <th>Range</th>
-        </tr>
+    <!-- Table to display guesses -->
+    <table id="resultsTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Pantheon</th>
+                <th>Role</th>
+                <th>Range</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Rows will be added dynamically -->
+        </tbody>
     </table>
 
     <script src="script.js"></script>

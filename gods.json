@@ -1,3 +1,6 @@
+// This is your database of gods
+// Each god is an object with properties you want to compare
+
 [
   {
     "name": "Zeus",
@@ -12,5 +15,12 @@
     "pantheon": "Norse",
     "role": "Guardian",
     "range": "Melee"
+  },
+  {
+    "name": "Neith",
+    "gender": "Female",
+    "pantheon": "Egyptian",
+    "role": "Hunter",
+    "range": "Ranged"
   }
 ]

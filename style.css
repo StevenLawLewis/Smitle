@@ -13,12 +13,12 @@ td, th {
     padding: 10px;
 }
 
+/* Correct = green */
 .correct {
-    background-color: green;
-    color: white;
+    background-color: lightgreen;
 }
 
-.wrong {
-    background-color: red;
-    color: white;
+/* Incorrect = red */
+.incorrect {
+    background-color: lightcoral;
 }
