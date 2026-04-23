@@ -1,16 +1,478 @@
 [
   {
-    "name": "Zeus",
+    "name": "Achilles",
+    "gender": "Male",
+    "pantheon": "Greek",
+    "role": "Warrior",
+    "range": "Melee"
+  },
+  {
+    "name": "Agni",
+    "gender": "Male",
+    "pantheon": "Hindu",
+    "role": "Mage",
+    "range": "Ranged"
+  },
+  {
+    "name": "Ah Muzen Cab",
+    "gender": "Male",
+    "pantheon": "Maya",
+    "role": "Hunter",
+    "range": "Ranged"
+  },
+  {
+    "name": "Ah Puch",
+    "gender": "Male",
+    "pantheon": "Maya",
+    "role": "Mage",
+    "range": "Ranged"
+  },
+  {
+    "name": "Amaterasu",
+    "gender": "Female",
+    "pantheon": "Japanese",
+    "role": "Warrior",
+    "range": "Melee"
+  },
+  {
+    "name": "Anhur",
+    "gender": "Male",
+    "pantheon": "Egyptian",
+    "role": "Hunter",
+    "range": "Ranged"
+  },
+  {
+    "name": "Anubis",
+    "gender": "Male",
+    "pantheon": "Egyptian",
+    "role": "Mage",
+    "range": "Ranged"
+  },
+  {
+    "name": "Ao Kuang",
+    "gender": "Male",
+    "pantheon": "Chinese",
+    "role": "Mage",
+    "range": "Melee"
+  },
+  {
+    "name": "Aphrodite",
+    "gender": "Female",
+    "pantheon": "Greek",
+    "role": "Mage",
+    "range": "Ranged"
+  },
+  {
+    "name": "Apollo",
+    "gender": "Male",
+    "pantheon": "Greek",
+    "role": "Hunter",
+    "range": "Ranged"
+  },
+  {
+    "name": "Arachne",
+    "gender": "Female",
+    "pantheon": "Greek",
+    "role": "Assassin",
+    "range": "Melee"
+  },
+  {
+    "name": "Ares",
+    "gender": "Male",
+    "pantheon": "Greek",
+    "role": "Guardian",
+    "range": "Melee"
+  },
+  {
+    "name": "Artemis",
+    "gender": "Female",
+    "pantheon": "Greek",
+    "role": "Hunter",
+    "range": "Ranged"
+  },
+  {
+    "name": "Athena",
+    "gender": "Female",
+    "pantheon": "Greek",
+    "role": "Guardian",
+    "range": "Melee"
+  },
+  {
+    "name": "Atlas",
+    "gender": "Male",
+    "pantheon": "Greek",
+    "role": "Guardian",
+    "range": "Melee"
+  },
+  {
+    "name": "Awilix",
+    "gender": "Female",
+    "pantheon": "Maya",
+    "role": "Assassin",
+    "range": "Melee"
+  },
+  {
+    "name": "Baba Yaga",
+    "gender": "Female",
+    "pantheon": "Slavic",
+    "role": "Mage",
+    "range": "Ranged"
+  },
+  {
+    "name": "Bacchus",
+    "gender": "Male",
+    "pantheon": "Roman",
+    "role": "Guardian",
+    "range": "Melee"
+  },
+  {
+    "name": "Bakasura",
+    "gender": "Male",
+    "pantheon": "Hindu",
+    "role": "Assassin",
+    "range": "Melee"
+  },
+  {
+    "name": "Bastet",
+    "gender": "Female",
+    "pantheon": "Egyptian",
+    "role": "Assassin",
+    "range": "Melee"
+  },
+  {
+    "name": "Bellona",
+    "gender": "Female",
+    "pantheon": "Roman",
+    "role": "Warrior",
+    "range": "Melee"
+  },
+  {
+    "name": "Cabrakan",
+    "gender": "Male",
+    "pantheon": "Maya",
+    "role": "Guardian",
+    "range": "Melee"
+  },
+  {
+    "name": "Cerberus",
+    "gender": "Male",
+    "pantheon": "Greek",
+    "role": "Guardian",
+    "range": "Melee"
+  },
+  {
+    "name": "Chernobog",
+    "gender": "Male",
+    "pantheon": "Slavic",
+    "role": "Hunter",
+    "range": "Ranged"
+  },
+  {
+    "name": "Chronos",
     "gender": "Male",
     "pantheon": "Greek",
     "role": "Mage",
     "range": "Ranged"
   },
   {
-    "name": "Ymir",
+    "name": "Cupid",
+    "gender": "Male",
+    "pantheon": "Roman",
+    "role": "Hunter",
+    "range": "Ranged"
+  },
+  {
+    "name": "Fenrir",
+    "gender": "Male",
+    "pantheon": "Norse",
+    "role": "Assassin",
+    "range": "Melee"
+  },
+  {
+    "name": "Freya",
+    "gender": "Female",
+    "pantheon": "Norse",
+    "role": "Mage",
+    "range": "Melee"
+  },
+  {
+    "name": "Geb",
+    "gender": "Male",
+    "pantheon": "Egyptian",
+    "role": "Guardian",
+    "range": "Melee"
+  },
+  {
+    "name": "Hades",
+    "gender": "Male",
+    "pantheon": "Greek",
+    "role": "Mage",
+    "range": "Ranged"
+  },
+  {
+    "name": "Heimdallr",
+    "gender": "Male",
+    "pantheon": "Norse",
+    "role": "Hunter",
+    "range": "Ranged"
+  },
+  {
+    "name": "Hel",
+    "gender": "Female",
+    "pantheon": "Norse",
+    "role": "Mage",
+    "range": "Ranged"
+  },
+  {
+    "name": "Hercules",
+    "gender": "Male",
+    "pantheon": "Roman",
+    "role": "Warrior",
+    "range": "Melee"
+  },
+  {
+    "name": "Hou Yi",
+    "gender": "Male",
+    "pantheon": "Chinese",
+    "role": "Hunter",
+    "range": "Ranged"
+  },
+  {
+    "name": "Hun Batz",
+    "gender": "Male",
+    "pantheon": "Maya",
+    "role": "Assassin",
+    "range": "Melee"
+  },
+  {
+    "name": "Ishtar",
+    "gender": "Female",
+    "pantheon": "Babylonian",
+    "role": "Hunter",
+    "range": "Ranged"
+  },
+  {
+    "name": "Izanami",
+    "gender": "Female",
+    "pantheon": "Japanese",
+    "role": "Hunter",
+    "range": "Ranged"
+  },
+  {
+    "name": "Janus",
+    "gender": "Male",
+    "pantheon": "Roman",
+    "role": "Mage",
+    "range": "Ranged"
+  },
+  {
+    "name": "Jing Wei",
+    "gender": "Female",
+    "pantheon": "Chinese",
+    "role": "Hunter",
+    "range": "Ranged"
+  },
+  {
+    "name": "Jormungandr",
     "gender": "Male",
     "pantheon": "Norse",
     "role": "Guardian",
+    "range": "Ranged"
+  },
+  {
+    "name": "Kali",
+    "gender": "Female",
+    "pantheon": "Hindu",
+    "role": "Assassin",
     "range": "Melee"
+  },
+  {
+    "name": "Khepri",
+    "gender": "Male",
+    "pantheon": "Egyptian",
+    "role": "Guardian",
+    "range": "Melee"
+  },
+  {
+    "name": "King Arthur",
+    "gender": "Male",
+    "pantheon": "Arthurian",
+    "role": "Warrior",
+    "range": "Melee"
+  },
+  {
+    "name": "Kukulkan",
+    "gender": "Male",
+    "pantheon": "Maya",
+    "role": "Mage",
+    "range": "Ranged"
+  },
+  {
+    "name": "Loki",
+    "gender": "Male",
+    "pantheon": "Norse",
+    "role": "Assassin",
+    "range": "Melee"
+  },
+  {
+    "name": "Medusa",
+    "gender": "Female",
+    "pantheon": "Greek",
+    "role": "Hunter",
+    "range": "Ranged"
+  },
+  {
+    "name": "Mercury",
+    "gender": "Male",
+    "pantheon": "Roman",
+    "role": "Assassin",
+    "range": "Melee"
+  },
+  {
+    "name": "Merlin",
+    "gender": "Male",
+    "pantheon": "Arthurian",
+    "role": "Mage",
+    "range": "Ranged"
+  },
+  {
+    "name": "Mulan",
+    "gender": "Female",
+    "pantheon": "Chinese",
+    "role": "Warrior",
+    "range": "Melee"
+  },
+  {
+    "name": "Neith",
+    "gender": "Female",
+    "pantheon": "Egyptian",
+    "role": "Hunter",
+    "range": "Ranged"
+  },
+  {
+    "name": "Nemesis",
+    "gender": "Female",
+    "pantheon": "Greek",
+    "role": "Assassin",
+    "range": "Melee"
+  },
+  {
+    "name": "Nike",
+    "gender": "Female",
+    "pantheon": "Greek",
+    "role": "Warrior",
+    "range": "Melee"
+  },
+  {
+    "name": "Nox",
+    "gender": "Female",
+    "pantheon": "Roman",
+    "role": "Mage",
+    "range": "Ranged"
+  },
+  {
+    "name": "Odin",
+    "gender": "Male",
+    "pantheon": "Norse",
+    "role": "Warrior",
+    "range": "Melee"
+  },
+  {
+    "name": "Osiris",
+    "gender": "Male",
+    "pantheon": "Egyptian",
+    "role": "Warrior",
+    "range": "Melee"
+  },
+  {
+    "name": "Pele",
+    "gender": "Female",
+    "pantheon": "Polynesian",
+    "role": "Assassin",
+    "range": "Melee"
+  },
+  {
+    "name": "Poseidon",
+    "gender": "Male",
+    "pantheon": "Greek",
+    "role": "Mage",
+    "range": "Ranged"
+  },
+  {
+    "name": "Ra",
+    "gender": "Male",
+    "pantheon": "Egyptian",
+    "role": "Mage",
+    "range": "Ranged"
+  },
+  {
+    "name": "Scylla",
+    "gender": "Female",
+    "pantheon": "Greek",
+    "role": "Mage",
+    "range": "Ranged"
+  },
+  {
+    "name": "Susano",
+    "gender": "Male",
+    "pantheon": "Japanese",
+    "role": "Assassin",
+    "range": "Melee"
+  },
+  {
+    "name": "Sylvanus",
+    "gender": "Male",
+    "pantheon": "Roman",
+    "role": "Guardian",
+    "range": "Ranged"
+  },
+  {
+    "name": "Thanatos",
+    "gender": "Male",
+    "pantheon": "Greek",
+    "role": "Assassin",
+    "range": "Melee"
+  },
+  {
+    "name": "Thor",
+    "gender": "Male",
+    "pantheon": "Norse",
+    "role": "Assassin",
+    "range": "Melee"
+  },
+  {
+    "name": "Thoth",
+    "gender": "Male",
+    "pantheon": "Egyptian",
+    "role": "Mage",
+    "range": "Ranged"
+  },
+  {
+    "name": "Tyr",
+    "gender": "Male",
+    "pantheon": "Norse",
+    "role": "Warrior",
+    "range": "Melee"
+  },
+  {
+    "name": "Ullr",
+    "gender": "Male",
+    "pantheon": "Norse",
+    "role": "Hunter",
+    "range": "Ranged"
+  },
+  {
+    "name": "Vamana",
+    "gender": "Male",
+    "pantheon": "Hindu",
+    "role": "Warrior",
+    "range": "Melee"
+  },
+  {
+    "name": "Vulcan",
+    "gender": "Male",
+    "pantheon": "Roman",
+    "role": "Mage",
+    "range": "Ranged"
   }
 ]
