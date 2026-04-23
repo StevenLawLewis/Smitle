@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Zeus",
+    "gender": "Male",
+    "pantheon": "Greek",
+    "role": "Mage",
+    "range": "Ranged"
+  },
+  {
+    "name": "Ymir",
+    "gender": "Male",
+    "pantheon": "Norse",
+    "role": "Guardian",
+    "range": "Melee"
+  }
+]
