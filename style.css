@@ -2,6 +2,7 @@ body {
     /* Your existing styles */
     font-family: Arial;
     text-align: center;
+
     /* Background image */
     background-image: url("images/background.jpg");
     /* Makes image cover full screen */
