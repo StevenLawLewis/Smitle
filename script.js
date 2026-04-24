@@ -1,5 +1,10 @@
-let gods = [];        // Will store all gods from JSON
-let answer = null;    // Today's correct god
+// Will store all gods from JSON
+let gods = [];        
+
+// Will store today's answer once we determine it
+let answer = null; 
+
+// ---------------------------------------------------------------------------------------------------------------------------------
 
 // Load the JSON file when page loads
 fetch('gods.json')
@@ -7,29 +12,41 @@ fetch('gods.json')
     .then(data => {
         gods = data;
 
-        // Pick today's god once data is loaded
+        // Get today's god once data is loaded
         answer = getDailyGod();
 
-        console.log("Today's answer:", answer); // You can remove later
+        // For testing, log the answer to console (remove later)
+        console.log("Today's answer:", answer);
     });
 
+// ---------------------------------------------------------------------------------------------------------------------------------
 
 // Function to determine daily god
 function getDailyGod() {
+    // If gods not loaded yet, return null
+    if (!gods || gods.length === 0) return null;
+
     // Fixed start date (important so everyone gets same rotation)
-    const startDate = new Date("2024-01-01");
+    const startDate = new Date("2026-04-24");
+
+    // Get today's date
     const today = new Date();
 
-    // Calculate difference in days
+    // Calculate difference in days, Get time difference in milliseconds
+    const MS_PER_DAY = 1000 * 60 * 60 * 24;
     const diffTime = today - startDate;
-    const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
 
-    // Use modulo to loop through gods
-    const index = diffDays % gods.length;
+    // Convert to days (can be negative if before start date)
+    const diffDays = Math.floor(diffTime / MS_PER_DAY);
 
+    // Use modulo to loop through gods and handle negative values safely
+    const index = ((diffDays % gods.length) + gods.length) % gods.length;
+
+    // Return the god for today
     return gods[index];
 }
 
+// ---------------------------------------------------------------------------------------------------------------------------------
 
 // Called when user clicks "Guess"
 function submitGuess() {
@@ -38,7 +55,9 @@ function submitGuess() {
     // Find the god in our dataset
     const guessedGod = gods.find(g => g.name.toLowerCase() === input.toLowerCase());
 
-    if (!guessedGod) {
+    // If not found, alert user and exit
+    if (!guessedGod)
+    {
         alert("God not found!");
         return;
     }

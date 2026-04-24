@@ -1,3 +1,4 @@
+/* Background image and overlay */
 body {
     /* Your existing styles */
     font-family: Arial;
@@ -5,12 +6,16 @@ body {
 
     /* Background image */
     background-image: url("images/background.jpg");
+
     /* Makes image cover full screen */
     background-size: cover;
+
     /* Keeps it centered */
     background-position: center;
+
     /* Prevents tiling */
     background-repeat: no-repeat;
+
     /* Keeps it fixed when scrolling */
     background-attachment: fixed;
 }
